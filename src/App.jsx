@@ -1,4 +1,5 @@
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
+import ShaderCanvas1 from "./Components/ShaderAnimations/ShaderCanvas1";
 
 function App() {
   return (
@@ -7,9 +8,11 @@ function App() {
         width: "100vw",
         height: "100vh",
         backgroundColor: "black",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
-      Nilesh Kamble
+      <ShaderCanvas1 />
     </Stack>
   );
 }
