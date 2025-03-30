@@ -9,7 +9,7 @@ export const experiences = [
   {
     title: "Member Technical Staff 3",
     company_name: "Tessell",
-    date: "March 2025 - Presented",
+    date: "March 2025 - Present",
     mobileText: "Recently Promoted",
     details: [
       {

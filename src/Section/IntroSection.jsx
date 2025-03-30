@@ -4,6 +4,7 @@ import { introPageStyles } from "../styles/styles.introSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const IntroSection = () => {
   const classes = introPageStyles;
@@ -55,6 +56,15 @@ const IntroSection = () => {
                 style={classes.icons.mail}
               />
             </a>
+          </Stack>
+          <Stack sx={{ width: "100%", alignItems: "center" }}>
+            <Stack sx={{ width: "70px" }}>
+              <DotLottieReact
+                src="https://lottie.host/a86103e6-4233-4fe4-83ed-140ce5f42863/JfKIQA7TLF.lottie"
+                loop
+                autoplay
+              />
+            </Stack>
           </Stack>
         </Stack>
       </Stack>

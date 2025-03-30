@@ -11,14 +11,16 @@ export const introPageStyles = {
     overflowX: "hidden",
   },
   canvasAndTextContainer: {
+    display: "flex",
     alignItems: "center",
     justifyContent: "space-around",
     py: 5,
     height: "100%",
   },
   textContainer: {
+    display: "flex",
     alignItems: "center",
-    width: "600px",
+    width: "100%",
   },
   nameText: {
     fontFamily: "Montserrat",
@@ -32,6 +34,7 @@ export const introPageStyles = {
     color: styleTemplate.color.lightGrey,
     fontSize: "18px",
     textAlign: "center",
+    width: "90%",
   },
   nameTitleAndIconContainer: {
     gap: 1,
