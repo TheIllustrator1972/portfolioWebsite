@@ -1,4 +1,5 @@
 import { Stack, Typography } from "@mui/material";
+import { mobileExperienceItemStyles } from "../../styles/styles.mobileExperienceItem";
 
 const ExperienceMobile = ({ experience }) => {
   const classes = mobileExperienceItemStyles;

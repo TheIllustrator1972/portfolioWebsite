@@ -15,8 +15,12 @@ const IntroSection = () => {
         <Stack sx={classes.nameTitleAndIconContainer}>
           <Stack sx={classes.textContainer}>
             <Typography sx={classes.nameText}>Nilesh Kamble</Typography>
-            <Typography sx={classes.titleText}>Software Engineer</Typography>
+            <Typography sx={classes.titleText}>
+              Frontend developer crafting seamless user experiences with clean
+              code, sharp design, and a passion for performance.
+            </Typography>
           </Stack>
+
           <Stack sx={classes.iconsContainer}>
             <a
               href="https://github.com/TheIllustrator1972"

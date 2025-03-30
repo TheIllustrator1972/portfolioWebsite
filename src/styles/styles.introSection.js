@@ -30,7 +30,8 @@ export const introPageStyles = {
     fontFamily: "Montserrat",
     fontWeight: "500",
     color: styleTemplate.color.lightGrey,
-    fontSize: "32px",
+    fontSize: "18px",
+    textAlign: "center",
   },
   nameTitleAndIconContainer: {
     gap: 1,
