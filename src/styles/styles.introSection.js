@@ -21,14 +21,14 @@ export const introPageStyles = {
     width: "600px",
   },
   nameText: {
-    fontFamily: "Roboto",
+    fontFamily: "Montserrat",
     fontWeight: "700",
     color: styleTemplate.color.white,
     fontSize: { xs: "36px", sm: "40px", md: "56px" },
   },
   titleText: {
-    fontFamily: "Roboto",
-    fontWeight: "700",
+    fontFamily: "Montserrat",
+    fontWeight: "500",
     color: styleTemplate.color.lightGrey,
     fontSize: "32px",
   },

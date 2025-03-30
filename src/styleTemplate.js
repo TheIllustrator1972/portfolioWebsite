@@ -3,6 +3,6 @@ export const styleTemplate = {
     black: "#000",
     white: "#fff",
     grey: "ccc",
-    lightGrey: "#333",
+    lightGrey: "#999",
   },
 };
