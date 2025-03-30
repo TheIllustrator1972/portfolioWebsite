@@ -5,7 +5,6 @@ import { mobileProjectListItemStyles } from "../../styles/styles.mobileProjectLi
 
 const MobileProjectListItem = ({ project, index }) => {
   const classes = mobileProjectListItemStyles;
-  console.log(index);
 
   return (
     <Stack sx={classes.container}>

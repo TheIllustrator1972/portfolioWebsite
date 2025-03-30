@@ -1,5 +1,5 @@
 import * as React from "react";
-const VScode = (size) => (
+const VScode = ({ size }) => (
   <svg
     width={size}
     height={size}

@@ -2,7 +2,7 @@ import { Stack, Box, Typography, Link } from "@mui/material";
 import DownloadOnTheAppStoreBanner from "../../images/DownloadIsometria";
 import { desktopProjectListItemStyles } from "../../styles/styles.desktopProjectListItem";
 
-const DesktopProjectListItem = ({ project, index }) => {
+const DesktopProjectListItem = ({ project }) => {
   const classes = desktopProjectListItemStyles;
   return (
     <Stack sx={classes.container}>

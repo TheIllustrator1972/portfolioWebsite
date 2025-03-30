@@ -1,5 +1,5 @@
 import * as React from "react";
-const Javascript = (size) => (
+const Javascript = ({ size }) => (
   <svg
     viewBox="0 0 32 32"
     fill="none"

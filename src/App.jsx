@@ -2,13 +2,15 @@ import { Stack } from "@mui/material";
 import GlassPlanet from "./images/GlassPlanet";
 import IntroSection from "./Section/IntroSection";
 import PortfolioSection from "./Section/PortfolioSection";
+import ExperienceSection from "./Section/ExperienceSection";
 
 function App() {
   return (
     <Stack>
       <IntroSection />
       <PortfolioSection />
-      <Stack
+      <ExperienceSection />
+      {/* <Stack
         sx={{
           width: "100vw",
           alignItems: "center",
@@ -17,7 +19,7 @@ function App() {
         }}
       >
         <GlassPlanet />
-      </Stack>
+      </Stack> */}
     </Stack>
   );
 }
