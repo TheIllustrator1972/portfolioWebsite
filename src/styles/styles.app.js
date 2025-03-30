@@ -6,12 +6,15 @@ export const introPageStyles = {
     minWidth: "100vw",
     width: "100%",
     height: "100vh",
-    backgroundColor: "black",
-    justifyContent: "center",
+    backgroundColor: styleTemplate.color.black,
     alignItems: "center",
+    overflow: "hidden",
+    border: "1px solid red",
   },
   canvasAndTextContainer: {
     alignItems: "center",
+    justifyContent: "space-around",
+
     py: 5,
     height: "100%",
     gap: 10,

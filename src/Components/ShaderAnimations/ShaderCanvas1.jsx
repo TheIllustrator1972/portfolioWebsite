@@ -86,8 +86,8 @@ export default function ShaderCanvas1() {
   return (
     <Box
       sx={{
-        width: { sm: "60vw", md: "50vw", lg: "30vw" },
-        height: { sm: "60vw", md: "50vw", lg: "30vw" },
+        width: { xs: "90vw", sm: "63vw", md: "55vw", lg: "45vw", xl: "30vw" },
+        height: { xs: "90vw", sm: "63vw", md: "55vw", lg: "45vw", xl: "30vw" },
       }}
     >
       <Canvas
