@@ -8,7 +8,7 @@ const DesktopProjectListItem = ({ project }) => {
     <Stack sx={classes.container}>
       <Box sx={classes.imageContainer}>
         <img
-          src={`src/images/${project?.image}.png`}
+          src={`/images/${project?.image}.png`}
           alt="Project Preview"
           style={classes.imageStyle}
         />
