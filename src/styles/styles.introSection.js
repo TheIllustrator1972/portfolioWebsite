@@ -45,4 +45,5 @@ export const introPageStyles = {
     linkedin: { margin: "10px", color: "#0077b5" },
     mail: { margin: "10px", color: styleTemplate.color.white },
   },
+  lottieContainer: { width: "100%", alignItems: "center" },
 };

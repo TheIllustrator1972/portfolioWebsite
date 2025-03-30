@@ -57,7 +57,7 @@ const IntroSection = () => {
               />
             </a>
           </Stack>
-          <Stack sx={{ width: "100%", alignItems: "center" }}>
+          <Stack sx={classes.lottieContainer}>
             <Stack sx={{ width: "70px" }}>
               <DotLottieReact
                 src="https://lottie.host/a86103e6-4233-4fe4-83ed-140ce5f42863/JfKIQA7TLF.lottie"
