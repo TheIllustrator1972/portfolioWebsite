@@ -81,11 +81,9 @@ function ShaderPlane() {
 export default function ShaderCanvas1() {
   return (
     <Canvas
-      style={{
-        width: "100%",
-        maxWidth: "500px",
-        height: "auto",
-        aspectRatio: "1 / 1", // Ensures it remains a square
+      sx={{
+        width: { xs: "90vw", sm: "60vw", md: "50vw" },
+        height: { xs: "90vw", sm: "60vw", md: "50vw" },
         borderRadius: "14px",
       }}
     >

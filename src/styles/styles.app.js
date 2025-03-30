@@ -8,18 +8,23 @@ export const introPageStyles = {
     justifyContent: "center",
     alignItems: "center",
   },
-  canvasAndTextContainer: { alignItems: "center", gap: 10 },
-  textContainer: { alignItems: "center", gap: 0.5, width: "600px" },
+  canvasAndTextContainer: {
+    alignItems: "center",
+    py: 5,
+    height: "100%",
+    gap: 10,
+  },
+  textContainer: { alignItems: "center", width: "600px" },
   nameText: {
     fontFamily: "Roboto",
     fontWeight: "700",
     color: styleTemplate.color.white,
-    fontSize: "48px",
+    fontSize: "56px",
   },
   titleText: {
     fontFamily: "Roboto",
     fontWeight: "700",
-    color: styleTemplate.color.white,
+    color: styleTemplate.color.lightGrey,
     fontSize: "32px",
   },
 };

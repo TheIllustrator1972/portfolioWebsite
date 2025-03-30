@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx" // or "react"
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "moduleResolution": "node"
   }
 }
