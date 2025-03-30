@@ -2,7 +2,9 @@ import { styleTemplate } from "../styleTemplate";
 
 export const introPageStyles = {
   container: {
-    width: "100vw",
+    display: "flex",
+    minWidth: "100vw",
+    width: "100%",
     height: "100vh",
     backgroundColor: "black",
     justifyContent: "center",
@@ -19,7 +21,7 @@ export const introPageStyles = {
     fontFamily: "Roboto",
     fontWeight: "700",
     color: styleTemplate.color.white,
-    fontSize: "56px",
+    fontSize: { xs: "36px", sm: "40px", md: "56px" },
   },
   titleText: {
     fontFamily: "Roboto",

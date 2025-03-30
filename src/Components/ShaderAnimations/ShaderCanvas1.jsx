@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
+import { Box } from "@mui/material";
 
 const vertexShader = `
   varying vec2 vUv;
@@ -54,14 +55,17 @@ const fragmentShader = `
 
 function ShaderPlane() {
   const materialRef = useRef();
+  const { viewport } = useThree();
+
   useFrame(({ clock }) => {
     if (materialRef.current) {
       materialRef.current.uniforms.u_time.value = clock.elapsedTime;
     }
   });
+
   return (
-    <mesh scale={[4, 4, 1]}>
-      <planeGeometry args={[2, 2]} />
+    <mesh scale={[viewport.width, viewport.height, 1]}>
+      <planeGeometry args={[1, 1]} />
       <shaderMaterial
         ref={materialRef}
         attach="material"
@@ -80,14 +84,24 @@ function ShaderPlane() {
 
 export default function ShaderCanvas1() {
   return (
-    <Canvas
+    <Box
       sx={{
-        width: { xs: "90vw", sm: "60vw", md: "50vw" },
-        height: { xs: "90vw", sm: "60vw", md: "50vw" },
-        borderRadius: "14px",
+        width: { sm: "60vw", md: "50vw", lg: "30vw" },
+        height: { sm: "60vw", md: "50vw", lg: "30vw" },
       }}
     >
-      <ShaderPlane />
-    </Canvas>
+      <Canvas
+        orthographic
+        camera={{ position: [0, 0, 5], zoom: 100 }}
+        style={{
+          width: "100%",
+          height: "100%",
+          aspectRatio: "1 / 1",
+          borderRadius: "14px",
+        }}
+      >
+        <ShaderPlane />
+      </Canvas>
+    </Box>
   );
 }
