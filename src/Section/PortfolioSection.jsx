@@ -13,6 +13,9 @@ import HTML from "../Components/SkillsAndTools/HTML";
 import CSS from "../Components/SkillsAndTools/CSS";
 import DownloadOnTheAppStoreBanner from "../images/DownloadIsometria";
 import DesktopProjectListItem from "../Components/Helper/DesktopProjectListItem";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import MobileProjectListItem from "../Components/Helper/MobileProjectListItem";
 
 const projects = [
   {
@@ -41,6 +44,9 @@ const projects = [
 ];
 
 const PortfolioSection = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <Stack
       sx={{
@@ -50,7 +56,13 @@ const PortfolioSection = () => {
         alignItems: "center",
       }}
     >
-      <Stack sx={{ width: { sm: "90%", md: "70%" }, gap: 5 }}>
+      <Stack
+        sx={{
+          width: { sm: "90%", md: "70%" },
+          gap: 5,
+          p: isSmallScreen ? 4 : 0,
+        }}
+      >
         <Typography
           sx={{
             color: styleTemplate.color.white,
@@ -62,9 +74,13 @@ const PortfolioSection = () => {
           Portfolio
         </Typography>
         <Stack sx={{ gap: { sm: 3, md: 8 } }}>
-          {projects?.map((project) => (
-            <DesktopProjectListItem project={project} />
-          ))}
+          {projects?.map((project, index) =>
+            isSmallScreen ? (
+              <MobileProjectListItem project={project} index={index} />
+            ) : (
+              <DesktopProjectListItem project={project} index={index} />
+            )
+          )}
         </Stack>
       </Stack>
     </Stack>

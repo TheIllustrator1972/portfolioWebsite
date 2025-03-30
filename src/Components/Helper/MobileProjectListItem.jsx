@@ -1,9 +1,12 @@
-import { Stack, Box, Typography, Link } from "@mui/material";
+import { Stack, Box, Typography, Link, Divider } from "@mui/material";
 import DownloadOnTheAppStoreBanner from "../../images/DownloadIsometria";
-import { desktopProjectListItemStyles } from "../../styles/styles.desktopProjectListItem";
 
-const DesktopProjectListItem = ({ project, index }) => {
-  const classes = desktopProjectListItemStyles;
+import { mobileProjectListItemStyles } from "../../styles/styles.mobileProjectListItem";
+
+const MobileProjectListItem = ({ project, index }) => {
+  const classes = mobileProjectListItemStyles;
+  console.log(index);
+
   return (
     <Stack sx={classes.container}>
       <Box sx={classes.imageContainer}>
@@ -50,8 +53,9 @@ const DesktopProjectListItem = ({ project, index }) => {
           </Stack>
         </Stack>
       </Stack>
+      {index === 0 && <Divider sx={{ backgroundColor: "grey" }} />}
     </Stack>
   );
 };
 
-export default DesktopProjectListItem;
+export default MobileProjectListItem;
