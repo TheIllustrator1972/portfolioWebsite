@@ -91,6 +91,7 @@ export default function ShaderCanvas1() {
       }}
     >
       <Canvas
+        resize={{ scroll: false }}
         orthographic
         camera={{ position: [0, 0, 5], zoom: 100 }}
         style={{
@@ -99,6 +100,7 @@ export default function ShaderCanvas1() {
           aspectRatio: "1 / 1",
           borderRadius: "14px",
         }}
+        frameloop="always"
       >
         <ShaderPlane />
       </Canvas>
