@@ -1,12 +1,11 @@
 import * as React from "react";
-const Javascript = (props) => (
+const Javascript = (size) => (
   <svg
-    width="800px"
-    height="800px"
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
+    width={size}
+    height={size}
   >
     <rect x={2} y={2} width={28} height={28} fill="#FFCA28" />
     <path
