@@ -4,6 +4,7 @@ import SwiftUI from "../Components/SkillsAndTools/SwiftUI";
 import VScode from "../Components/SkillsAndTools/VSCode";
 import Xcode from "../Components/SkillsAndTools/XCode";
 import DownloadOnTheAppStoreBanner from "../images/DownloadIsometria";
+// DUMMY COMMIT
 
 export const experiences = [
   {
