@@ -8,18 +8,18 @@ export const introPageStyles = {
     height: "100vh",
     backgroundColor: styleTemplate.color.black,
     alignItems: "center",
-    overflow: "hidden",
-    border: "1px solid red",
+    overflowX: "hidden",
   },
   canvasAndTextContainer: {
     alignItems: "center",
     justifyContent: "space-around",
-
     py: 5,
     height: "100%",
-    gap: 10,
   },
-  textContainer: { alignItems: "center", width: "600px" },
+  textContainer: {
+    alignItems: "center",
+    width: "600px",
+  },
   nameText: {
     fontFamily: "Roboto",
     fontWeight: "700",
@@ -31,5 +31,14 @@ export const introPageStyles = {
     fontWeight: "700",
     color: styleTemplate.color.lightGrey,
     fontSize: "32px",
+  },
+  nameTitleAndIconContainer: {
+    gap: 1,
+  },
+  iconsContainer: { flexDirection: "row", justifyContent: "center" },
+  icons: {
+    github: { margin: "10px", color: styleTemplate.color.white },
+    linkedin: { margin: "10px", color: "#0077b5" },
+    mail: { margin: "10px", color: styleTemplate.color.white },
   },
 };
