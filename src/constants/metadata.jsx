@@ -78,7 +78,7 @@ export const projects = [
     image: "isometria",
     appStoreBanner: DownloadOnTheAppStoreBanner,
     helperText:
-      "Isometria is a SwiftUI-based isometric grid art app for iPad and macOS. It offers customizable grids, color tools, and intuitive drawing features, including zoom, pan, undo/redo, and export options.",
+      "Isometria is a SwiftUI-based isometric grid art app for iPad and macOS. It offers customizable grids, color tools, and intuitive drawing features, including zoom, undo/redo, and export options.",
     toolsUsed: [
       { component: Swift, size: 54 },
       { component: SwiftUI },
