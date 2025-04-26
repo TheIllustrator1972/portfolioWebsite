@@ -1,8 +1,8 @@
 import { styleTemplate } from "../styleTemplate";
 
-export const desktopProjectListItemStyles = {
+export const desktopProjectListItemStyles = (index) => ({
   container: {
-    flexDirection: "row",
+    flexDirection: index % 2 === 0 ? "row" : "row-reverse",
     justifyContent: "space-around",
     alignItems: "center",
   },
@@ -44,4 +44,4 @@ export const desktopProjectListItemStyles = {
     alignItems: "center",
     justifyContent: "center",
   },
-};
+});

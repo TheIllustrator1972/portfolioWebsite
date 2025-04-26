@@ -2,8 +2,14 @@ import { Stack, Box, Typography, Link } from "@mui/material";
 import DownloadOnTheAppStoreBanner from "../../images/DownloadIsometria";
 import { desktopProjectListItemStyles } from "../../styles/styles.desktopProjectListItem";
 
-const DesktopProjectListItem = ({ project }) => {
-  const classes = desktopProjectListItemStyles;
+export const appProjectTitleToStoreLinksMap = {
+  ["Isometria"]: "https://apple.co/4h3qHz8",
+  ["Word Mean +"]: "https://apple.co/3YPtYea",
+};
+
+const DesktopProjectListItem = ({ project, index }) => {
+  const classes = desktopProjectListItemStyles(index);
+
   return (
     <Stack sx={classes.container}>
       <Box sx={classes.imageContainer}>
@@ -30,7 +36,7 @@ const DesktopProjectListItem = ({ project }) => {
         </Typography>
         {project?.appStoreBanner && (
           <a
-            href="https://apple.co/4h3qHz8"
+            href={appProjectTitleToStoreLinksMap?.[project?.name]}
             target="_blank"
             rel="noopener noreferrer"
           >

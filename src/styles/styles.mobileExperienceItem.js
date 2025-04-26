@@ -8,10 +8,11 @@ export const mobileExperienceItemStyles = {
     fontFamily: "Montserrat",
   },
   companyAndDate: {
-    color: "white",
+    color: styleTemplate.color.lightGrey,
     fontSize: "16px",
     fontWeight: 400,
     fontFamily: "Montserrat",
+    fontStyle: "italic",
   },
   mobileText: {
     color: "#555",

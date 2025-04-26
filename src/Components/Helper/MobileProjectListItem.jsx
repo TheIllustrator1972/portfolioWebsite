@@ -2,6 +2,8 @@ import { Stack, Box, Typography, Link, Divider } from "@mui/material";
 import DownloadOnTheAppStoreBanner from "../../images/DownloadIsometria";
 
 import { mobileProjectListItemStyles } from "../../styles/styles.mobileProjectListItem";
+import { projects } from "../../constants/metadata";
+import { appProjectTitleToStoreLinksMap } from "./DesktopProjectListItem";
 
 const MobileProjectListItem = ({ project, index }) => {
   const classes = mobileProjectListItemStyles;
@@ -32,7 +34,7 @@ const MobileProjectListItem = ({ project, index }) => {
         </Typography>
         {project?.appStoreBanner && (
           <a
-            href="https://apple.co/4h3qHz8"
+            href={appProjectTitleToStoreLinksMap?.[project?.name]}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -52,7 +54,9 @@ const MobileProjectListItem = ({ project, index }) => {
           </Stack>
         </Stack>
       </Stack>
-      {index === 0 && <Divider sx={{ backgroundColor: "grey" }} />}
+      {index !== projects.length - 1 && (
+        <Divider sx={{ backgroundColor: "grey" }} />
+      )}
     </Stack>
   );
 };

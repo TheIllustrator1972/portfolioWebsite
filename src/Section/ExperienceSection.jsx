@@ -11,7 +11,7 @@ import { experienceSectionStyles } from "../styles/styles.experienceSection";
 const ExperienceSection = () => {
   const [active, setActive] = useState(experiences[0]);
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
   const classes = experienceSectionStyles;
 
   return (

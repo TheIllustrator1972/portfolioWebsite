@@ -17,8 +17,8 @@ const IntroSection = () => {
           <Stack sx={classes.textContainer}>
             <Typography sx={classes.nameText}>Nilesh Kamble</Typography>
             <Typography sx={classes.titleText}>
-              Frontend developer crafting seamless user experiences with clean
-              code, sharp design, and a passion for performance.
+              Software engineer crafting seamless web and iOS experiences with
+              clean code, sharp design, and a passion for performance.
             </Typography>
           </Stack>
 

@@ -4,7 +4,6 @@ import SwiftUI from "../Components/SkillsAndTools/SwiftUI";
 import VScode from "../Components/SkillsAndTools/VSCode";
 import Xcode from "../Components/SkillsAndTools/XCode";
 import DownloadOnTheAppStoreBanner from "../images/DownloadIsometria";
-// DUMMY COMMIT
 
 export const experiences = [
   {
@@ -25,7 +24,7 @@ export const experiences = [
     company_name: "Tessell",
     date: "June 2023 - March 2025",
     mobileText:
-      "Building scalable frontend solutions at Tessell, enhancing UX, optimizing performance, and developing internal tools for data visualization and operations.",
+      "Building scalable frontend solutions at Tessell, enhancing UX, optimizing performance, and developing internal tools for data visualization and internal operations portal.",
     details: [
       {
         heading: "Frontend Development",
@@ -79,6 +78,20 @@ export const projects = [
     appStoreBanner: DownloadOnTheAppStoreBanner,
     helperText:
       "Isometria is a SwiftUI-based isometric grid art app for iPad and macOS. It offers customizable grids, color tools, and intuitive drawing features, including zoom, undo/redo, and export options.",
+    toolsUsed: [
+      { component: Swift, size: 54 },
+      { component: SwiftUI },
+      { component: Xcode },
+    ],
+  },
+  {
+    name: "Word Mean +",
+    platform: ["iPhone", "iPad", "Mac"],
+    link: "https://wordmean.app",
+    image: "wordMean",
+    appStoreBanner: DownloadOnTheAppStoreBanner,
+    helperText:
+      "WordMean+ helps you quickly find clear, simple definitions for any word. Whether you're studying, writing, or just curious, WordMean+ makes it easy to understand and expand your vocabulary — all in a clean, fast, and user-friendly experience.",
     toolsUsed: [
       { component: Swift, size: 54 },
       { component: SwiftUI },
